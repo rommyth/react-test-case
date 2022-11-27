@@ -18,11 +18,10 @@ export default function CardListSection() {
     'https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png';
 
   const { data, isLoading, error } = useGetHighlightQuery(query);
-  console.log(data);
+
   // -----------------
   // General Function
   // -----------------
-
   const handleChangePage = (page: number, pageSize: number) => {
     searchParams.set('page', page.toString());
     searchParams.set('pageSize', pageSize.toString());
@@ -39,7 +38,13 @@ export default function CardListSection() {
         </div>
         <Row gutter={[16, 16]}>
           {data?.articles.map((item, i) => (
-            <Col key={i} span={8}>
+            <Col
+              key={i}
+              xs={{ span: 24 }}
+              sm={{ span: 24 }}
+              md={{ span: 12 }}
+              lg={{ span: 8 }}
+            >
               <Card
                 className="card-list__card"
                 hoverable

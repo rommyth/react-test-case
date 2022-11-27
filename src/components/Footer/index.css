@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.footer__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer__sosmed a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__sosmed a:hover {
+  text-decoration: none;
+  color: var(--blue-primary);
+}

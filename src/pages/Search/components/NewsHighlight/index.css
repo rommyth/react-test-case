@@ -1,0 +1,17 @@
+.search__highlight {
+  margin-top: 5rem;
+  background-color: #d9d9d9;
+  padding: 1rem;
+  height: 1200px;
+  overflow: auto;
+}
+
+.search__highlight::-webkit-scrollbar {
+  display: none;
+}
+
+.search__highlight h3 {
+  color: gray;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}

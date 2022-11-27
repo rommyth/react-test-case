@@ -1,0 +1,50 @@
+.card-horizontal {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px lightgray;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.card-horizontal:hover {
+  box-shadow: 2px 2px 20px #ababab;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-horizontal img {
+  width: 30%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+
+.card-horizontal__info {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-horizontal__info span {
+  font-size: 12px;
+  color: gray;
+}
+
+.card-horizontal__body h1 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.card-horizontal__body p {
+  font-size: 14px;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

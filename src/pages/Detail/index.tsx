@@ -21,11 +21,18 @@ export default function DetailScreen() {
     return <Navigate to="/" />;
   }
 
+  // general function
+  // ----------------
+  const getText = (html: string) => {
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent;
+  };
+
   return (
     <div className="detail">
       <div className="container-fluid">
         <Row gutter={[16, 16]}>
-          <Col span={18}>
+          <Col md={{ span: 24 }} lg={{ span: 18 }}>
             <div className="detail__box">
               <Title level={2}>{data.title}</Title>
               <div className="detail__info">
@@ -44,7 +51,7 @@ export default function DetailScreen() {
                 />
 
                 <Paragraph>
-                  {data.description}{' '}
+                  {getText(data.content)}{' '}
                   <Link href={data.url} target="_blank">
                     Baca Selengkapnya
                   </Link>
@@ -52,7 +59,7 @@ export default function DetailScreen() {
               </div>
             </div>
           </Col>
-          <Col span={6}>
+          <Col md={{ span: 24 }} lg={{ span: 6 }}>
             <div className="detail__box bgGray">
               <div className="detail__box-small">
                 <Title level={4}>Berita Lainnya</Title>

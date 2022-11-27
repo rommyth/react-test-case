@@ -18,7 +18,6 @@
 .carousel .carousel__headline img {
   object-fit: cover;
   width: 100%;
-  max-height: var(--screen-max-height);
 }
 
 .carousel .carousel__box {
