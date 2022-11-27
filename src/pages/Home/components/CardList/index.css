@@ -1,0 +1,37 @@
+.card-list {
+}
+
+.card-list__card {
+  cursor: default;
+}
+
+.card-list .card-list__card img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.card-list__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-list__card-body a h3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.card-list__card-body a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-list__card-body a:hover {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}

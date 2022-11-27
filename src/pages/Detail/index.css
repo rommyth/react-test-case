@@ -1,0 +1,50 @@
+.detail {
+  display: block;
+}
+
+.detail__left {
+  padding-top: 3rem;
+}
+.detail__right {
+  background-color: aquamarine;
+}
+
+.detail__box {
+  margin-top: 3rem;
+}
+
+.detail__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail__body {
+  margin-top: 3rem;
+}
+
+.detail__body img {
+  aspect-ratio: 16/9;
+  width: 90%;
+  max-width: 900px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+.bgGray {
+  background-color: rgb(232, 229, 229);
+}
+
+.detail__box-small {
+  padding: 1rem;
+  overflow: auto;
+  max-height: 900px;
+}
+
+.detail__box-small::-webkit-scrollbar {
+  display: none;
+}
+
+.detail__box-small img {
+  width: 100%;
+}

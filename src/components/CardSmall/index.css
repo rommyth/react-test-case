@@ -1,0 +1,26 @@
+.card-small img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card-small__body {
+}
+
+.card-small__body span {
+  font-size: 12px;
+  color: gray;
+}
+
+.card-small__body a {
+  color: black;
+  font-weight: 600;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.card-small__body a:hover {
+  text-decoration: underline;
+}

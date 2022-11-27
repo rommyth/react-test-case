@@ -1,0 +1,24 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+}
+
+header {
+  background-color: white !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.header .header__menu {
+  background-color: transparent;
+  height: 100%;
+}

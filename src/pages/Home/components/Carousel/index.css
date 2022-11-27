@@ -1,0 +1,73 @@
+:root {
+  --screen-height: calc(100vh - 65px);
+  --screen-max-height: 900px;
+}
+.carousel {
+  display: block;
+  height: var(--screen-height);
+  max-height: var(--screen-max-height);
+}
+
+.carousel .carousel__headline {
+  position: relative;
+  height: var(--screen-height);
+  width: 100%;
+  max-height: var(--screen-max-height);
+}
+
+.carousel .carousel__headline img {
+  object-fit: cover;
+  width: 100%;
+  max-height: var(--screen-max-height);
+}
+
+.carousel .carousel__box {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel .carousel__box::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7658051990327381) 1%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  max-height: 1200px;
+}
+
+.carousel__container {
+  padding: 0 15px;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.carousel__card {
+  margin-bottom: 50px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+
+  color: white;
+  z-index: 99;
+  border-left: 3px solid blue;
+}
